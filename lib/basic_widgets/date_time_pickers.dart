@@ -1,8 +1,5 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-
-import 'basic_widgets.dart';
 
 void main() => runApp(const MyApp());
 
@@ -13,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Contoh Date Picker',
-      home: MyHomePage(title: 'My App'),
+      home: MyHomePage(title: 'Contoh Date Picker'),
     );
   }
 }
@@ -70,16 +67,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const FabWidget()),
-          )
-        },
-        tooltip: 'Next',
-        child: const Icon(Icons.arrow_right),
       ),
     );
   }
